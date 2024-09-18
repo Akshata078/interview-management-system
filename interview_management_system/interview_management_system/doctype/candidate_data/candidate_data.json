@@ -102,8 +102,9 @@
   },
   {
    "fieldname": "applied_role",
-   "fieldtype": "Data",
-   "label": "Applied Role"
+   "fieldtype": "Select",
+   "label": "Applied Role",
+   "options": "Frontend Developer"
   },
   {
    "fieldname": "column_break_vunn",
@@ -127,7 +128,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-09-18 11:28:06.986704",
+ "modified": "2024-09-18 12:18:06.980367",
  "modified_by": "Administrator",
  "module": "Interview Management System",
  "name": "Candidate Data",
