@@ -1,0 +1,90 @@
+{
+ "actions": [],
+ "allow_import": 1,
+ "allow_rename": 1,
+ "autoname": "format:{interviewer_name}-{#}",
+ "creation": "2024-09-11 12:27:14.806043",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "interviewer_name",
+  "role",
+  "column_break_negs",
+  "email_address",
+  "phone_number",
+  "section_break_pvht",
+  "assigned_interviews",
+  "column_break_vaop",
+  "status"
+ ],
+ "fields": [
+  {
+   "fieldname": "interviewer_name",
+   "fieldtype": "Data",
+   "label": "Interviewer Name"
+  },
+  {
+   "fieldname": "role",
+   "fieldtype": "Data",
+   "label": "Role"
+  },
+  {
+   "fieldname": "column_break_negs",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "email_address",
+   "fieldtype": "Data",
+   "label": "Email Address"
+  },
+  {
+   "fieldname": "phone_number",
+   "fieldtype": "Phone",
+   "label": "Phone Number"
+  },
+  {
+   "fieldname": "section_break_pvht",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "assigned_interviews",
+   "fieldtype": "Int",
+   "label": "Assigned Interviews "
+  },
+  {
+   "fieldname": "column_break_vaop",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "Active\nInactive"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-09-18 11:28:16.795272",
+ "modified_by": "Administrator",
+ "module": "Interview Management System",
+ "name": "Interviewer",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

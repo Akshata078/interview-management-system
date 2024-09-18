@@ -1,0 +1,118 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:{candidate_name}-{applied_role}-{interviewer}",
+ "creation": "2024-09-11 12:29:08.188984",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "candidate_name",
+  "interviewer",
+  "column_break_kezt",
+  "date",
+  "time",
+  "section_break_yuqy",
+  "duration",
+  "applied_role",
+  "column_break_soyx",
+  "interview_stage",
+  "status"
+ ],
+ "fields": [
+  {
+   "fieldname": "candidate_name",
+   "fieldtype": "Link",
+   "label": "Candidate Name",
+   "options": "Candidate Data"
+  },
+  {
+   "fieldname": "interviewer",
+   "fieldtype": "Link",
+   "label": "Interviewer Name",
+   "options": "Interviewer"
+  },
+  {
+   "fieldname": "column_break_kezt",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "label": "Interview Date"
+  },
+  {
+   "fieldname": "time",
+   "fieldtype": "Time",
+   "label": "Interview Time"
+  },
+  {
+   "fieldname": "section_break_yuqy",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "duration",
+   "fieldtype": "Duration",
+   "label": "Duration"
+  },
+  {
+   "fetch_from": "candidate_name.applied_role",
+   "fieldname": "applied_role",
+   "fieldtype": "Data",
+   "label": "Applied role"
+  },
+  {
+   "fieldname": "column_break_soyx",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "interview_stage",
+   "fieldtype": "Select",
+   "label": "Interview Stage",
+   "options": "Initial\nTechnical\nFinal"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "Hired\nRejected\nIn Progress"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-09-18 11:27:56.226084",
+ "modified_by": "Administrator",
+ "module": "Interview Management System",
+ "name": "Interview Schedule",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [
+  {
+   "color": "Green",
+   "title": "Hired"
+  },
+  {
+   "color": "Red",
+   "title": "Rejected"
+  },
+  {
+   "color": "Yellow",
+   "title": "In Progress"
+  }
+ ]
+}

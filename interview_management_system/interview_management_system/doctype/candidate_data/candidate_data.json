@@ -1,0 +1,153 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:full_name",
+ "creation": "2024-09-11 12:12:01.320177",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "personal_information_section",
+  "full_name",
+  "permanent_address",
+  "column_break_ogdz",
+  "phone_number",
+  "email_address",
+  "educational_background_section",
+  "highest_educational_degree",
+  "column_break_gkuc",
+  "institution_name",
+  "skills_and_competencies_section",
+  "technical_skills",
+  "column_break_ujpb",
+  "soft_skills",
+  "resume_section",
+  "applied_role",
+  "column_break_vunn",
+  "experience",
+  "column_break_eeci",
+  "attach_ldum"
+ ],
+ "fields": [
+  {
+   "fieldname": "personal_information_section",
+   "fieldtype": "Section Break",
+   "label": "Personal Information"
+  },
+  {
+   "fieldname": "full_name",
+   "fieldtype": "Data",
+   "label": "Full Name",
+   "unique": 1
+  },
+  {
+   "fieldname": "permanent_address",
+   "fieldtype": "Data",
+   "label": "Permanent Address"
+  },
+  {
+   "fieldname": "column_break_ogdz",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "phone_number",
+   "fieldtype": "Phone",
+   "label": "Phone Number"
+  },
+  {
+   "fieldname": "email_address",
+   "fieldtype": "Data",
+   "label": "Email Address"
+  },
+  {
+   "fieldname": "educational_background_section",
+   "fieldtype": "Section Break",
+   "label": "Educational Background"
+  },
+  {
+   "fieldname": "highest_educational_degree",
+   "fieldtype": "Data",
+   "label": "Highest Educational Degree"
+  },
+  {
+   "fieldname": "column_break_gkuc",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "institution_name",
+   "fieldtype": "Data",
+   "label": "Institution Name"
+  },
+  {
+   "fieldname": "skills_and_competencies_section",
+   "fieldtype": "Section Break",
+   "label": "Skills and Competencies"
+  },
+  {
+   "fieldname": "technical_skills",
+   "fieldtype": "Small Text",
+   "label": "Technical Skills"
+  },
+  {
+   "fieldname": "column_break_ujpb",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "soft_skills",
+   "fieldtype": "Small Text",
+   "label": "Soft skills "
+  },
+  {
+   "fieldname": "resume_section",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "applied_role",
+   "fieldtype": "Data",
+   "label": "Applied Role"
+  },
+  {
+   "fieldname": "column_break_vunn",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "experience",
+   "fieldtype": "Select",
+   "label": "Experience",
+   "options": "1 year\n2 year\n3 year\nMore than 3 year"
+  },
+  {
+   "fieldname": "column_break_eeci",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "attach_ldum",
+   "fieldtype": "Attach",
+   "label": "Upload your CV"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-09-18 11:28:06.986704",
+ "modified_by": "Administrator",
+ "module": "Interview Management System",
+ "name": "Candidate Data",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
