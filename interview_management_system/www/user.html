@@ -1,0 +1,13 @@
+{% extends "templates/web.html" %}
+{% block page_content %}
+
+{% set name = frappe.form_dict.name or "" %}
+{% set age = frappe.form_dict.age or "" %}
+<form >
+    <label for="">Name : 
+    <input type="text" value="{{name}}"></label>
+    <label for="">Password :
+    <input type="text" value="{{age}}"></label>
+</form>
+
+{% endblock %}

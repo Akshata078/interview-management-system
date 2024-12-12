@@ -9,14 +9,15 @@
   "candidate_name",
   "interviewer",
   "column_break_kezt",
-  "date",
+  "interview_date",
   "time",
   "section_break_yuqy",
   "duration",
   "applied_role",
   "column_break_soyx",
   "interview_stage",
-  "status"
+  "status",
+  "amended_from"
  ],
  "fields": [
   {
@@ -34,11 +35,6 @@
   {
    "fieldname": "column_break_kezt",
    "fieldtype": "Column Break"
-  },
-  {
-   "fieldname": "date",
-   "fieldtype": "Date",
-   "label": "Interview Date"
   },
   {
    "fieldname": "time",
@@ -75,11 +71,27 @@
    "fieldtype": "Select",
    "label": "Status",
    "options": "Hired\nRejected\nIn Progress"
+  },
+  {
+   "fieldname": "interview_date",
+   "fieldtype": "Date",
+   "label": "Interview Date"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Interview Schedule",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
   }
  ],
  "index_web_pages_for_search": 1,
+ "is_submittable": 1,
  "links": [],
- "modified": "2024-09-18 11:27:56.226084",
+ "modified": "2024-09-29 19:20:27.447855",
  "modified_by": "Administrator",
  "module": "Interview Management System",
  "name": "Interview Schedule",
